@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Universo Matheus</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="confetti-layer"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- CARREGAMENTO -->
+  <section class="screen active" id="loadingScreen">
+    <div class="loader-box">
+      <div class="loader-orbit">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <h1>Universo Matheus</h1>
+      <p id="loadingText">Preparando surpresa...</p>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABERTURA -->
+  <section class="screen" id="introScreen">
+    <div class="intro-content">
+      <p class="mini-label">Portal de acesso</p>
+      <h1 id="introTitle"></h1>
+      <p id="introText"></p>
+
+      <div class="intro-actions">
+        <button class="btn primary" id="openGiftBtn">Abrir presente</button>
+        <button class="btn ghost runaway" id="dontOpenBtn">Não abrir</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENHA -->
+  <section class="screen" id="lockScreen">
+    <div class="phone-lock">
+      <div class="phone-top"></div>
+
+      <div class="lock-icon" id="lockIcon">🔒</div>
+      <h2>Universo bloqueado</h2>
+      <p>Digite a senha para continuar</p>
+
+      <input type="password" id="passwordInput" placeholder="Senha" maxlength="20">
+
+      <button class="btn primary full" id="unlockBtn">Desbloquear</button>
+
+      <p class="error-message" id="passwordMessage"></p>
+    </div>
+  </section>
+
+  <!-- SITE PRINCIPAL -->
+  <main class="app" id="mainApp">
+
+    <header class="hero" id="inicio">
+      <nav class="topbar">
+        <div class="brand">
+          <span>✦</span>
+          Universo Matheus
+        </div>
+
+        <button class="music-mini" id="miniMusicBtn">♪</button>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="mini-label">Hoje é seu dia</p>
+
+          <h1>
+            <span id="mainTitle"></span>
+            <strong id="nameClickArea"></strong>
+          </h1>
+
+          <p class="hero-subtitle" id="mainSubtitle"></p>
+
+          <div class="hero-buttons">
+            <button class="btn primary" data-section="carta">Abrir cartinha</button>
+            <button class="btn secondary" data-section="memorias">Ver memórias</button>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="green-blob"></div>
+
+          <div class="main-photo">
+            <img src="img/capa.jpg" alt="Foto principal">
+          </div>
+
+          <div class="floating-polaroid p1">
+            <img src="img/matheus-1.jpg" alt="Foto">
+            <span>arquivo raro</span>
+          </div>
+
+          <div class="floating-polaroid p2">
+            <img src="img/matheus-2.jpg" alt="Foto">
+            <span>memória</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PAINEL -->
+    <section class="section portal">
+      <div class="section-title">
+        <p class="mini-label">Escolha uma fase</p>
+        <h2>Portal do Universo</h2>
+      </div>
+
+      <div class="cards-grid">
+        <button class="portal-card" data-section="aniversario">
+          <span>🎂</span>
+          <h3>Seu dia</h3>
+          <p>Uma homenagem inicial.</p>
+        </button>
+
+        <button class="portal-card" data-section="memorias">
+          <span>📸</span>
+          <h3>Memórias</h3>
+          <p>Fotos em formato polaroid.</p>
+        </button>
+
+        <button class="portal-card" data-section="timeline">
+          <span>🕰️</span>
+          <h3>Linha do tempo</h3>
+          <p>Algumas coisas que ficaram.</p>
+        </button>
+
+        <button class="portal-card" data-section="carta">
+          <span>💌</span>
+          <h3>Cartinha</h3>
+          <p>Uma mensagem guardada.</p>
+        </button>
+
+        <button class="portal-card" data-section="playlist">
+          <span>🎧</span>
+          <h3>Playlist</h3>
+          <p>Trilha sonora especial.</p>
+        </button>
+
+        <button class="portal-card" data-section="surpresas">
+          <span>🎁</span>
+          <h3>Surpresas</h3>
+          <p>Pequenos segredos escondidos.</p>
+        </button>
+
+        <button class="portal-card" data-section="final">
+          <span>🎆</span>
+          <h3>Final</h3>
+          <p>Modo festa ativado.</p>
+        </button>
+      </div>
+    </section>
+
+    <!-- ANIVERSÁRIO -->
+    <section class="section" id="aniversario">
+      <div class="birthday-panel">
+        <p class="mini-label">Uma pequena homenagem</p>
+        <h2>Hoje é o seu dia.</h2>
+        <p id="birthdayMessage"></p>
+
+        <div class="wish-grid">
+          <div class="wish-card">
+            <span>✨</span>
+            <p>Que Deus te abençoe.</p>
+          </div>
+
+          <div class="wish-card">
+            <span>🌿</span>
+            <p>Que sua vida seja leve.</p>
+          </div>
+
+          <div class="wish-card">
+            <span>💫</span>
+            <p>Que seus sonhos encontrem caminho.</p>
+          </div>
+
+          <div class="wish-card">
+            <span>🤍</span>
+            <p>Que você nunca perca seu brilho.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMÓRIAS -->
+    <section class="section" id="memorias">
+      <div class="section-title">
+        <p class="mini-label">Arquivos raros</p>
+        <h2>Mural de Memórias</h2>
+      </div>
+
+      <div class="polaroid-wall" id="photoWall"></div>
+    </section>
+
+    <!-- LINHA DO TEMPO -->
+    <section class="section" id="timeline">
+      <div class="section-title">
+        <p class="mini-label">Caminho das memórias</p>
+        <h2>Linha do Tempo</h2>
+      </div>
+
+      <div class="timeline" id="timelineList"></div>
+    </section>
+
+    <!-- CARTINHA -->
+    <section class="section" id="carta">
+      <div class="section-title">
+        <p class="mini-label">Mensagem guardada</p>
+        <h2>Cartinha para você</h2>
+      </div>
+
+      <div class="letter-area">
+        <div class="envelope" id="envelope">
+          <div class="env-flap"></div>
+          <div class="env-body">
+            <span>💌</span>
+            <p>Clique para abrir</p>
+          </div>
+        </div>
+
+        <div class="letter-paper" id="letterPaper">
+          <p id="letterText"></p>
+          <button class="heart-secret" id="heartSecret">❤️</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAYLIST -->
+    <section class="section" id="playlist">
+      <div class="section-title">
+        <p class="mini-label">Trilha sonora</p>
+        <h2>Playlist Especial</h2>
+      </div>
+
+      <div class="player">
+        <div class="player-cover">
+          <img id="musicCover" src="img/capa.jpg" alt="Capa da música">
+        </div>
+
+        <div class="player-info">
+          <p id="musicArtist">Universo Matheus</p>
+          <h3 id="musicTitle">Para começar</h3>
+          <span id="musicPhrase">Essa é só pra entrar no clima.</span>
+
+          <div class="controls">
+            <button id="prevMusic">⏮</button>
+            <button id="playMusic" class="play">▶</button>
+            <button id="nextMusic">⏭</button>
+          </div>
+
+          <div class="music-progress">
+            <span id="currentTime">0:00</span>
+            <input type="range" id="musicRange" min="0" value="0">
+            <span id="durationTime">0:00</span>
+          </div>
+        </div>
+
+        <audio id="audioPlayer"></audio>
+      </div>
+    </section>
+
+    <!-- SURPRESAS -->
+    <section class="section" id="surpresas">
+      <div class="section-title">
+        <p class="mini-label">Segredos escondidos</p>
+        <h2>Mini-surpresas</h2>
+      </div>
+
+      <div class="secret-grid">
+        <button class="secret-card" id="secretOne">
+          <span>💚</span>
+          <h3>Coração secreto</h3>
+          <p>Clique para revelar.</p>
+        </button>
+
+        <button class="secret-card" id="secretTwo">
+          <span>🎁</span>
+          <h3>Presente oculto</h3>
+          <p>Tem mais uma coisa...</p>
+        </button>
+
+        <button class="secret-card" id="secretThree">
+          <span>✨</span>
+          <h3>Modo festa</h3>
+          <p>Ativar confetes.</p>
+        </button>
+      </div>
+
+      <div class="secret-result" id="secretResult"></div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="section final-section" id="final">
+      <canvas id="fireworks"></canvas>
+
+      <div class="final-content">
+        <p class="mini-label">Modo festa</p>
+        <h2 id="finalTitle"></h2>
+        <p id="finalText"></p>
+
+        <div class="final-actions">
+          <button class="btn primary" id="restartBtn">Rever desde o início</button>
+          <button class="btn secondary" data-section="carta">Abrir cartinha de novo</button>
+        </div>
+
+        <footer>
+          Feito com carinho por <span id="authorName"></span>.
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL FOTO -->
+  <div class="photo-modal" id="photoModal">
+    <button id="closeModal">×</button>
+    <img id="modalImage" src="" alt="Foto ampliada">
+    <p id="modalCaption"></p>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
