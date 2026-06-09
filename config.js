@@ -20,7 +20,7 @@ const SITE_CONFIG = {
     mensagemInicial: "Que Deus abençoe sua vida, seus sonhos, sua família e todos os caminhos que você ainda vai trilhar.",
 
     finalTitulo: "Feliz Aniversário, Vinícius Matheus!",
-    finalTexto: "Que esse novo ciclo seja leve, bonito e cheio de motivos para sorrir. Que nunca faltem bênçãos, saúde, paz, alegria e pessoas verdadeiras ao seu lado."
+    finalTexto: "Você sabe como eu sou, claro que no site vai ter uma supresa especial pra você."
   },
 
   frasesErroSenha: [
@@ -32,39 +32,39 @@ const SITE_CONFIG = {
 
   fotos: [
     {
-      arquivo: "img/matheus-1.jpg",
-      legenda: "Low profile detectado com sucesso kkk"
+      arquivo: "img/img (5).jpeg",
+      legenda: "foto nossa fofo ;-;"
     },
     {
-      arquivo: "img/matheus-2.jpg",
-      legenda: "Uma foto rara encontrada nos arquivos secretos."
+      arquivo: "img/img (11).jpeg",
+      legenda: "Odeio essa foto kkk."
     },
     {
-      arquivo: "img/matheus-3.jpg",
-      legenda: "Esse registro precisava estar aqui."
+      arquivo: "img/img (12).jpeg",
+      legenda: "tu no vôlei."
     },
     {
-      arquivo: "img/matheus-4.jpg",
-      legenda: "Momento oficialmente especial."
+      arquivo: "img/img (3).jpeg",
+      legenda: "Te amo bb saudades de tu;-;"
     }
   ],
 
   linhaDoTempo: [
     {
-      titulo: "Quando eu te conheci...",
-      texto: "Talvez eu nem imaginasse que um dia estaria fazendo algo assim para você. Mas algumas pessoas chegam de um jeito diferente."
+      titulo: "To com muita saudades de ti macho",
+      texto: "Bom, ja faz um tempo né, sendo sincero meu coração até acelera escrevendo isso kkkk desculpa, continuando bom muita coisa mudou por aqui, e esta até um pouco chato sem você, sinto muita saudades de você, dos nossos encontros, do velozes e furiosos com a sua moto KKKK das nossas brincadeiras é muita coisa, mas saiba que qualquer coisa estarei por aqui kkk mesmo de forma on-line"
     },
     {
-      titulo: "Coisas que eu percebi em você...",
-      texto: "Tem gente que não precisa fazer muito barulho para ser especial. Às vezes, o jeito, as conversas e as pequenas coisas já dizem muito."
+      titulo: "Obrigado",
+      texto: "Posso até te dizer que alguns conselhos teu ajudaram na minha vida pessoal, realmente as vezes as coisas não vao a nosso favor, realmente nessa vida existem muitas coisas que vão além da nossa compreensão, mas saiba que tuas palavras foram um caminho pra seguir o meu caminho, eu lembro das nossas conversas que foram passageiras, mas que eu levo sempre no meu coração."
     },
     {
-      titulo: "Momentos que ficaram...",
-      texto: "Entre brincadeiras, conversas, risadas e situações aleatórias, algumas memórias simplesmente ficam guardadas."
+      titulo: "Carta de saudade",
+      texto: "Eu fazendo isso to ate um pouco emocionado, mas faz parte, não sei, no momento que nós conhecemos foi um momento estranho e engraçado, mas quando nos desenvolvemos de acordo com a nossa amizade, e vi que você me cativaste, transformaste meu coração, Obrigado e Agradeço por isso."
     },
     {
-      titulo: "O que talvez eu nunca diga direito...",
-      texto: "Eu brinco bastante, mas tem carinho de verdade aqui. Esse site é só uma forma diferente de mostrar isso."
+      titulo: "Bom, no momento não posso realizar o seu pedido...",
+      texto: "Eu fazendo isso to ate um pouco emocionado, mas faz parte, não sei, no momento que nós conhecemos foi um momento estranho e engraçado, mas quando nos desenvolvemos de acordo com a nossa amizade, e vi que você me cativaste, transformaste meu coração, Obrigado e Agradeço por isso"
     },
     {
       titulo: "Hoje eu só queria te desejar...",
