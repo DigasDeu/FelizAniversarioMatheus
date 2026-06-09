@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Marcar Local</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #333;
+      font-size: 2em;
+      margin-bottom: 50px;
+    }
+    .button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .sim {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .sim:hover {
+      background-color: #45a049;
+    }
+    .nao {
+      background-color: #f44336;
+      color: white;
+    }
+    .nao:hover {
+      background-color: #d32f2f;
+    }
+    .outro {
+      background-color: #00248f;
+      color: white;
+    }
+    .outro:hover {
+      background-color: #093866;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vai querer ir marcar um local?</h1>
+  <button class="button sim" onclick="window.location.href='escolhadolocal.html'">Sim</button>
+  <button class="button nao" onclick="alert('Tudo bem, talvez em outra hora!')">Não</button>
+  <button class="button outro" onclick="window.location.href='outro.html'">outro😏</button>
+</body>
+</html>

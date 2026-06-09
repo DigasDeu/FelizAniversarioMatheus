@@ -94,15 +94,8 @@ Feliz aniversário. Que seu novo ciclo seja bonito, leve e cheio de motivos para
       titulo: "Para começar",
       artista: "Universo Matheus",
       frase: "Essa é só pra entrar no clima.",
-      arquivo: "music/musica-1.mp3",
+      arquivo: "Por Tão Pouco.mp3",
       capa: "img/capa.jpg"
     },
-    {
-      titulo: "Só escuta e sente",
-      artista: "Universo Matheus",
-      frase: "Essa parte combina com a homenagem.",
-      arquivo: "music/musica-2.mp3",
-      capa: "img/matheus-1.jpg"
-    }
   ]
 };
