@@ -137,6 +137,12 @@
           <p>Fotos em formato polaroid.</p>
         </button>
 
+        <button class="portal-card" data-section="videos">
+          <span>🎬</span>
+          <h3>Vídeos</h3>
+          <p>Lembranças maravilhosas.</p>
+        </button>
+
         <button class="portal-card" data-section="timeline">
           <span>🕰️</span>
           <h3>Linha do tempo</h3>
@@ -155,11 +161,11 @@
           <p>Trilha sonora especial.</p>
         </button>
 
-        <button class="portal-card" data-section="surpresas">
+        <a class="portal-card" href="supresa.html">
           <span>🎁</span>
           <h3>Surpresas</h3>
-          <p>Pequenos segredos escondidos.</p>
-        </button>
+          <p>Os três presentes especiais.</p>
+        </a>
 
         <button class="portal-card" data-section="final">
           <span>🎆</span>
@@ -208,6 +214,49 @@
       </div>
 
       <div class="polaroid-wall" id="photoWall"></div>
+    </section>
+
+    <!-- VÍDEOS / LEMBRANÇAS -->
+    <section class="section video-memories" id="videos">
+      <div class="section-title">
+        <p class="mini-label">Fragmentos especiais</p>
+        <h2>Lembranças maravilhosas</h2>
+        <p class="section-subtitle">
+          Alguns momentos não precisam de muitas palavras. Eles simplesmente ficam guardados.
+        </p>
+      </div>
+
+      <div class="videos-grid">
+
+        <div class="memory-video-card">
+          <div class="video-frame">
+            <video src="videos/ensinando.mp4" controls playsinline preload="metadata"></video>
+          </div>
+
+          <div class="video-info">
+            <span>Memória 01</span>
+            <h3>Um momento que ficou</h3>
+            <p>
+              KKKKKL EU AMO ESSE VIDEO KKKKM
+            </p>
+          </div>
+        </div>
+
+        <div class="memory-video-card">
+          <div class="video-frame">
+            <video src="videos/sle.mp4" controls playsinline preload="metadata"></video>
+          </div>
+
+          <div class="video-info">
+            <span>Memória 02</span>
+            <h3>Mais uma lembrança maravilhosa</h3>
+            <p>
+              Porque algumas memórias merecem ser vistas de novo, com carinho(verdade).
+            </p>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- LINHA DO TEMPO -->
@@ -277,8 +326,8 @@
       </div>
     </section>
 
-    <!-- SURPRESAS -->
-    <section class="section" id="surpresas">
+    <!-- MINI-SURPRESAS -->
+    <section class="section" id="mini-surpresas">
       <div class="section-title">
         <p class="mini-label">Segredos escondidos</p>
         <h2>Mini-surpresas</h2>
@@ -319,7 +368,7 @@
         <div class="final-actions">
           <button class="btn primary" id="restartBtn">Rever desde o início</button>
           <button class="btn secondary" data-section="carta">Abrir cartinha de novo</button>
-          <a href="supresa.html" class="btn primary">SUPRAISE</a>
+          <a href="supresa.html" class="btn primary">SUPRISE</a>
         </div>
 
         <footer>
@@ -343,3 +392,4 @@
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
+</html>
