@@ -137,12 +137,6 @@
           <p>Fotos em formato polaroid.</p>
         </button>
 
-        <button class="portal-card" data-section="videos">
-          <span>🎬</span>
-          <h3>Vídeos</h3>
-          <p>Lembranças maravilhosas.</p>
-        </button>
-
         <button class="portal-card" data-section="timeline">
           <span>🕰️</span>
           <h3>Linha do tempo</h3>
@@ -161,11 +155,11 @@
           <p>Trilha sonora especial.</p>
         </button>
 
-        <a class="portal-card" href="supresa.html">
+        <button class="portal-card" data-section="surpresas">
           <span>🎁</span>
           <h3>Surpresas</h3>
-          <p>Os três presentes especiais.</p>
-        </a>
+          <p>Pequenos segredos escondidos.</p>
+        </button>
 
         <button class="portal-card" data-section="final">
           <span>🎆</span>
@@ -214,49 +208,6 @@
       </div>
 
       <div class="polaroid-wall" id="photoWall"></div>
-    </section>
-
-    <!-- VÍDEOS / LEMBRANÇAS -->
-    <section class="section video-memories" id="videos">
-      <div class="section-title">
-        <p class="mini-label">Fragmentos especiais</p>
-        <h2>Lembranças maravilhosas</h2>
-        <p class="section-subtitle">
-          Alguns momentos não precisam de muitas palavras. Eles simplesmente ficam guardados.
-        </p>
-      </div>
-
-      <div class="videos-grid">
-
-        <div class="memory-video-card">
-          <div class="video-frame">
-            <video src="videos/ensinando.mp4" controls playsinline preload="metadata"></video>
-          </div>
-
-          <div class="video-info">
-            <span>Memória 01</span>
-            <h3>Vídeo teu bb</h3>
-            <p>
-              ensinando a atacar kakakakak
-            </p>
-          </div>
-        </div>
-
-        <div class="memory-video-card">
-          <div class="video-frame">
-            <video src="videos/sle.mp4" controls playsinline preload="metadata"></video>
-          </div>
-
-          <div class="video-info">
-            <span>Memória 02</span>
-            <h3>outra e a unica que eu tenho contigo</h3>
-            <p>
-              Porque algumas memórias merecem ser vistas de novo, com carinho(verdade).
-            </p>
-          </div>
-        </div>
-
-      </div>
     </section>
 
     <!-- LINHA DO TEMPO -->
@@ -326,8 +277,8 @@
       </div>
     </section>
 
-    <!-- MINI-SURPRESAS -->
-    <section class="section" id="mini-surpresas">
+    <!-- SURPRESAS -->
+    <section class="section" id="surpresas">
       <div class="section-title">
         <p class="mini-label">Segredos escondidos</p>
         <h2>Mini-surpresas</h2>
@@ -368,7 +319,7 @@
         <div class="final-actions">
           <button class="btn primary" id="restartBtn">Rever desde o início</button>
           <button class="btn secondary" data-section="carta">Abrir cartinha de novo</button>
-          <a href="supresa.html" class="btn primary">SUPRISE</a>
+          <a href="supresa.html" class="btn primary">SUPRAISE</a>
         </div>
 
         <footer>
@@ -392,4 +343,3 @@
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
-</html>
